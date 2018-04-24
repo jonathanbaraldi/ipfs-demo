@@ -1,0 +1,38 @@
+[
+    {
+        "OID": 1,
+        "USER_OWNER": "MIGUEL",
+        "NAME": "MODEL FRAUD 3",
+        "DESCRIPTION": "MODEL CREDIT 2015 2",
+        "PROCEDURE": "",
+        "VERSION": "",
+        "STATUS": "REQUESTED"
+    },
+    {
+        "OID": 2,
+        "USER_OWNER": "JONATHAN",
+        "NAME": "MODEL 2",
+        "DESCRIPTION": "MODEL FRAUD 2015 1",
+        "PROCEDURE": "",
+        "VERSION": "",
+        "STATUS": "REQUESTED"
+    },
+    {
+        "OID": 3,
+        "USER_OWNER": "CUSTOMER1",
+        "NAME": "Fraud Tesla Model",
+        "DESCRIPTION": "Model created by Tesla ADS for template",
+        "PROCEDURE": "FRAUD",
+        "VERSION": "1.0",
+        "STATUS": "ACTIVE"
+    },
+    {
+        "OID": 4,
+        "USER_OWNER": "CUSTOMER1",
+        "NAME": "Credit Tesla Model",
+        "DESCRIPTION": "Model created by Tesla ADS for template",
+        "PROCEDURE": "CREDIT",
+        "VERSION": "1.0",
+        "STATUS": "ACTIVE"
+    }
+]

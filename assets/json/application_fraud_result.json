@@ -1,0 +1,18 @@
+[
+  {
+    "LEGAL_ID":"12345678",
+    "NAME":"JONATHAN DIAS BARALDI",
+    "SCORE":"74.4",
+    "DECISION":"0",
+    "PREDICTION":"LEGITIMATE",
+    "CREATE_DATE":"21/07/2015 13:45:28"
+  },
+  {
+    "LEGAL_ID":"12345678",
+    "NAME":"JONATHAN DIAS BARALDI",
+    "SCORE":"28.4",
+    "DECISION":"0",
+    "PREDICTION":"FRAUD",
+    "CREATE_DATE":"21/07/2015 13:45:28"
+  }
+]

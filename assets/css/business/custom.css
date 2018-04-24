@@ -1,0 +1,39 @@
+
+
+.navbar-brand img {
+  display: inline;
+}
+
+.panel.panel-inverse {
+	box-shadow: 2px 4px 12px #000;
+}
+
+.widget {
+	box-shadow: 2px 4px 12px #000;	
+}
+
+.aws-icon {
+	height: 24px;
+	width: 24px;
+	margin: 3px 5px 0 0;
+	position: relative;
+	left: -8px;
+	top: -5px;
+	background: url(../../img/aws-icons.png) no-repeat;
+	float:left;
+}
+	.ec2 {
+		background-position: -0px 0px;		
+	}
+	.s3 {
+		background-position: -96px 0px;		
+	}
+	.rds {
+		background-position:-192px 0px;
+	}
+	.vpc {
+		background-position:-224px 0px;
+	}
+	.route53 {
+		background-position: -256px 0px;
+	}

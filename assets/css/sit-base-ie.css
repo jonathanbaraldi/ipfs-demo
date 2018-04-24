@@ -1,0 +1,9 @@
+body {background:url(../img/fundo.png); margin:0; padding:0; height:100%;overflow:hidden; }
+html, div, iframe { margin:0; padding:0; height:100%;overflow:hidden; }
+
+div.grafico { display:block; width:800px; border:0px;background:transparent; position:absolute;top:0px; left:0px;z-index:20;height:565px;}
+iframe#grafico { width:800px;display:block; height:565px;background:transparent;border:0px; }
+
+.ticker { top:570px; padding:0px;margin:0px; width:800px;height:30px; background:url(../img/fundo-rss.png);border:0px; color:red;}
+.ticker li div {padding: 2px 0 0 0; font-size:17px; text-indent:8px;top:-20px; background: transparent;border:0px;position: relative;}
+.ticker li div a{color:#red; text-decoration:none; z-index:99998;position:relative;top:0px;}

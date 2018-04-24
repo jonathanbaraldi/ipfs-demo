@@ -1,0 +1,12 @@
+{
+  "CPF": "81657838072",
+  "NOME": "JONATHAN DIAS BARALDI",
+  "FRAUDE": {
+    "STATUS": "SIM",
+    "SCORE": "12,23"
+  },
+  "APROVACAO": {
+    "STATUS": "SIM",
+    "SCORE": "12,34"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "PAST" : {
+    "LEGITIMATE":76,
+    "FRAUD":12
+  },
+  "PRESENT" : {
+    "LEGITIMATE":34,
+    "FRAUD":3
+  },
+  "FUTURE" : {
+    "LEGITIMATE":88,
+    "FRAUD":12
+  }
+}

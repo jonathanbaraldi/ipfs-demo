@@ -1,0 +1,56 @@
+.loader {
+	-webkit-animation: rotation 2s infinite linear;
+	-moz-animation: rotation .6s infinite linear;
+	-o-animation: rotation .6s infinite linear;
+	animation: rotation .6s infinite linear;
+}
+.loader {
+	height: 21px;
+	width: 24px;
+	display: none;
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 50%; */
+}
+
+.login .login-header {
+	width: 490px;
+}
+
+.instructionsBegin strong {
+	color:#FFF;
+	cursor: pointer;
+}
+
+.login.login-v2 .login-header .icon {
+  opacity: 1; 
+  filter: alpha(opacity=100);
+}
+
+.login-cover-bg {
+	background: #666;
+	background: -moz-radial-gradient(center,ellipse cover,#666 0,#000 100%);
+	background: -webkit-gradient(radial,center center,0,center center,100%,color-stop(0%,#666),color-stop(100%,#000));
+	background: -webkit-radial-gradient(center,ellipse cover,#666 0,#000 100%);
+	background: -o-radial-gradient(center,ellipse cover,#666 0,#000 100%);
+	background: -ms-radial-gradient(center,ellipse cover,#666 0,#000 100%);
+	background: radial-gradient(ellipse at center,#666 0,#000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000', GradientType=1);
+	/*
+	opacity: .8;
+	filter: alpha(opacity=80);
+	*/
+}
+
+.login-content .error {
+	border:1px solid red;
+	display: none;
+}
+
+.login-content .success {
+	border:1px solid green;
+	display: none;
+}
+.login-content .instructions {
+	display: none;
+}

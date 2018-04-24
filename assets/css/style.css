@@ -1,0 +1,212 @@
+html { 
+	/*
+	overflow:hidden;
+	*/
+}
+body {
+	background:#000;
+	margin:0;
+	padding:0;
+	height:auto;
+	
+}
+
+.content {
+	/* fundo página */
+	background: #c3c3c3;
+}
+
+.panel.fundo-mapa {
+	background: green;
+}
+
+.keys {
+	width:1346px;
+	height:50px;
+	position: absolute;
+	top:0px;
+	left:50%;
+	margin-left: -673px;
+	font-family: monospace;
+	font-size: 13px;
+	color:#FFF;
+	text-align: center;
+}
+
+.aws {
+	width:1346px;
+	height:auto;
+	position: absolute;
+	top:750px;
+	left:50%;
+	margin-left: -673px;
+	display: block;
+	font-family: monospace;
+	font-size: 17px;
+}
+
+	.aws .ec2 {
+		float:left;
+		position: relative;
+		width:665px;
+		height:auto;
+		font-size: 12px;
+	}
+		.aws .ec2 h2 {
+			padding: 3px;
+			color:#FFF;
+		}
+		.aws .ec2 h3 {
+			padding: 2px;
+			color:#c3c3c3;
+		}
+
+		.aws .ec2 h3.running {
+			color:#0dff00;
+		}
+		.aws .ec2 h3.stopped {
+			color:#f7dd00;
+		}
+		.aws .ec2 h3.terminated {
+			color:#ff2121;
+		}
+
+	.aws .buckets {
+		position: relative;
+		float:right;
+		width:665px;
+		height:auto;
+	}
+		.aws h1 {
+			color:green;
+			padding: 3px;
+			margin:0px;
+		}
+
+		.buckets .bucket {
+			width: 100%;
+			color:green;
+			padding: 5px;
+		}
+			.buckets .bucket span {
+				color:gray;
+				font-size: 12px;
+			}
+
+.mensagem {
+	color: #FFF;
+	font-family: Tahoma;
+	font-size: 12px;
+	position: relative;
+
+}
+
+.regiao {
+	overflow: auto;
+
+}
+	.mapa {
+		width:1346px;
+		height:680px;
+		background:url(../img/aws.map.jpg) #000 no-repeat left top;
+	}
+		.mapa .ec2 {
+			border:2px solid transparent;
+		}
+		.mapa .ec2:hover {
+			border:2px solid #FFF;
+		}
+		.mapa div {
+			width: 320px;
+			height: 150px;
+			position: relative;
+		}
+			b.running {
+				color:green;
+			}
+
+.aviso {	
+	top: 60px;
+	left: 70px;
+}	
+	
+	/* Virgínia do Norte */ 
+	#us-east-1 {
+		top: 230px;
+		left:250px;
+	}
+
+	/* São Paulo */
+	#sa-east-1 {
+		top:315px;
+		left:380px;
+	}
+
+	/* Oregon */
+	#us-west-2 {
+		top: -170px;
+		left: -50px;
+	}
+
+	/* California do Norte */
+	#us-west-1 {
+		top: -180px;
+		left: 0px;
+	}
+
+	/* Irlanda */
+	#eu-west-1 {
+		top: -490px;
+		left: 400px;
+	}
+		#eu-west-1 .aviso {	
+			top: 100px;
+			left: 110px;
+		}
+
+	/* Frankfurt */
+	#eu-central-1 {
+		top: -600px;
+		left: 560px;
+	}
+		#eu-central-1 .aviso {	
+			top: 100px;
+			left: 110px;
+		}
+
+	/* Singapura */
+	#ap-southeast-1 {
+		top: -545px;
+		left: 850px;
+	}
+		#ap-southeast-1 .aviso {	
+			top: 100px;
+			left: 110px;
+		}	
+
+	/* Tokyo */
+	#ap-northeast-1 {
+		top: -840px;
+		left: 1050px;
+	}
+		#ap-northeast-1 .aviso {	
+			top: 100px;
+			left: 110px;
+		}	
+
+	/* Sidney */
+	#ap-southeast-2 {
+		top: -730px;
+		left: 980px;
+	}
+		#ap-southeast-2 .aviso {	
+			top: 100px;
+			left: 110px;
+		}	
+	
+	
+	
+
+	
+
+	

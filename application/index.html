@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>TESLA ADS | Application</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="Tesla ADS - Automated Decisions Systems" name="description" />
+	<meta content="Jonathan Dias Baraldi" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="../assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../assets/css/animate.min.css" rel="stylesheet" />
+	<link href="../assets/css/style.min.css" rel="stylesheet" />
+	<link href="../assets/css/style-responsive.min.css" rel="stylesheet" />
+	<link href="../assets/css/theme/default.css" rel="stylesheet" id="theme" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="../assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap-wizard/css/bwizard.min.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+	
+	<!-- ================== BEGIN TESLA LEVEL STYLE ================== -->
+	<link href="../assets/css/business/application.css" rel="stylesheet" />
+	<link href="../assets/css/business/custom.css" rel="stylesheet" />
+	<!-- ================== END TESLA LEVEL STYLE ================== -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/pace/pace.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="../assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="../assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="../assets/crossbrowserjs/respond.min.js"></script>
+		<script src="../assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+	<script src="../assets/plugins/bootstrap-wizard/js/bwizard.js"></script>
+	<script src="../assets/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<!-- ================== BEGIN TESLA LEVEL JS ================== -->
+    <script src="../assets/js/business/comum.js"></script>
+    <script src="../assets/js/business/application.js"></script>
+    <!-- ================== END TESLA LEVEL JS ================== -->
+    <script>
+    	// Google Analytics
+	  
+	</script>
+</head>
+<body>
+	
+
+
+	
+	<div id="loader-wrapper">
+		
+		<div class="loader">
+		  <div class="inner one"></div>
+		  <div class="inner two"></div>
+		  <div class="inner three"></div>
+		</div>
+
+		<div class="tesla-loader">
+	  	</div>
+	</div>
+
+
+
+
+
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
+	<!-- end #page-loader -->
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+		
+
+
+		<!-- begin #content -->
+		<div id="content" class="content">
+			<!-- begin breadcrumb -->
+			<ol class="breadcrumb pull-right">
+				<li><a href="javascript:;">System</a></li>
+				<li class="active">Application</li>
+			</ol>
+			<!-- end breadcrumb -->
+			<!-- begin page-header -->
+			<h1 class="page-header">Application <small>Tip: Pay attention to the main documents.</small></h1>
+			<!-- end page-header -->
+
+			<!-- begin row -->
+			<div class="row model">
+				<!-- col-12 -->
+				<div class="col-md-12">
+					<div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Choose your model</h4>
+                        </div>
+                        <div class="panel-body model-choose">
+							
+                        </div>
+                        <div class="panel-body version-choose">
+							
+                        </div>
+                    </div>
+			    </div>
+			    <!-- end col-12 -->		
+			</div>
+
+			<!-- begin row -->
+			<div class="row application">
+                <!-- begin col-12 -->
+			    <div class="col-md-12">
+			        <!-- begin panel -->
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Model 3</h4>
+                        </div>
+                        <div class="panel-body">
+
+                            <!-- <form action="/" method="POST"> -->
+								<div id="wizard">
+									<ol>
+										<li>
+										    Identification 
+										    <small>Some personal informations that is going to help us</small>
+										</li>
+										<li>
+										    Contact Information
+										    <small>Address, phone number's and some other things are required here</small>
+										</li>
+										<li>
+										    References
+										    <small>Tell us a little more about you and give some references.</small>
+										</li>
+									</ol>
+									
+									<!-- begin wizard step-1 -->
+									<div>
+                                        <fieldset>
+                                            <legend class="pull-left width-full">Identification</legend>
+                                            
+
+                                            <!-- begin row -->
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>NAME</label>
+														<input type="text" id="NAME" name="NAME" placeholder="" class="form-control" value='SHEILA DIAS' />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>CPF</label>
+														<input type="text" id="CPF" name="CPF" placeholder="" class="form-control" value="92261515049" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>LEGAL_ID</label>
+														<input type="text" id="LEGAL_ID" name="LEGAL_ID" placeholder="" class="form-control" value="7072989903" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+                                            <!-- end row -->
+
+                                            <!-- begin row -->
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>EMISSOR</label>
+														<input type="text" id="EMISSOR" name="EMISSOR" placeholder="" class="form-control" value="SSP" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>NATIONALITY</label>
+														<input type="text" id="NATIONALITY"  name="NATIONALITY" placeholder="" class="form-control" value="76" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>CITY_BIRTH</label>
+														<input type="text" id="CITY_BIRTH" name="CITY_BIRTH" placeholder="" class="form-control" value="CANOAS" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+                                            <!-- end row -->
+
+                                            <!-- begin row -->
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>GENDER</label>
+														<input type="text" id="GENDER" name="GENDER" placeholder="" class="form-control" value="F" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>BIRTH_DATE</label>
+														<input type="text" id="BIRTH_DATE" name="BIRTH_DATE" placeholder="" class="form-control" value="24/07/1976" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>CIVIL_STATE</label>
+														<input type="text" id="CIVIL_STATE" name="CIVIL_STATE" placeholder="" class="form-control" value="S" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+                                            <!-- end row -->
+
+                                            <!-- begin row -->
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>MOTHER_NAME</label>
+														<input type="text" id="MOTHER_NAME" name="MOTHER_NAME" placeholder="" class="form-control" value="CARMEN LUCIA DA ROCHA" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>CHILD</label>
+														<input type="text" id="CHILD" name="CHILD" placeholder="" class="form-control" value="S" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+													<div class="form-group">
+														<label>EDUCATION</label>
+														<input type="text" id="EDUCATION" name="EDUCATION" placeholder="" class="form-control" value="FC" />
+													</div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+                                            <!-- end row -->
+
+										</fieldset>
+									</div>
+									<!-- end wizard step-1 -->
+									
+									<!-- begin wizard step-2 -->
+									<div>
+										<fieldset>
+											<legend class="pull-left width-full">Contact</legend>
+                                            <!-- begin row -->
+                                            
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_TYPE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_TYPE" name="RESIDENCE_TYPE" placeholder="" class="form-control" value="W" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>CEP</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="CEP" name="CEP" placeholder="" class="form-control" value="92200011" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>STREET</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="STREET" name="STREET" placeholder="" class="form-control" value="BOA ESPERANCA" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_NUMBER</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_NUMBER" name="RESIDENCE_NUMBER" placeholder="" class="form-control" value="1286" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_COMPLEMENT</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_COMPLEMENT" name="RESIDENCE_COMPLEMENT" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_CITY</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_CITY" name="RESIDENCE_CITY" placeholder="" class="form-control" value="CANOAS" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_NUMBER</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_NUMBER" name="RESIDENCE_NUMBER" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_COMPLEMENT</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_COMPLEMENT" name="RESIDENCE_COMPLEMENT" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_CITY</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_CITY" name="RESIDENCE_CITY" placeholder="" class="form-control" value="CANOAS" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_STATE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_NUMBER" name="RESIDENCE_NUMBER" placeholder="" class="form-control" value="RS" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_DDD</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_COMPLEMENT" name="RESIDENCE_COMPLEMENT" placeholder="" class="form-control" value="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>RESIDENCE_PHONE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="RESIDENCE_PHONE" name="RESIDENCE_PHONE" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>CELPHONE_DDD</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="CELPHONE_DDD" name="CELPHONE_DDD" placeholder="" class="form-control" value="51" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>CELPHONE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="CELPHONE" name="CELPHONE" placeholder="" class="form-control" value="94199867" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY" name="COMPANY" placeholder="" class="form-control" value="GET NET" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_CEP</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_CEP" name="COMPANY_CEP" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_STREET</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_STREET" name="COMPANY_STREET" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_NUMBER</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_NUMBER" name="COMPANY_NUMBER" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_COMPLEMENT</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_COMPLEMENT" name="COMPANY_COMPLEMENT" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_CITY</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_CITY" name="COMPANY_CITY" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_STATE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_STATE" name="COMPANY_STATE" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_DDD</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_DDD" name="COMPANY_DDD" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_PHONE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_PHONE" name="COMPANY_PHONE" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+                                        </fieldset>
+									</div>
+									<!-- end wizard step-2 -->
+
+
+									
+									<!-- begin wizard step-3 -->
+									<div>
+										<fieldset>
+											
+											<legend class="pull-left width-full">References</legend>
+                                            <!-- begin row -->
+                                            
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>OCCUPATION</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="OCCUPATION" name="OCCUPATION" placeholder="" class="form-control" value="B" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>PROFISSION</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="PROFISSION" name="PROFISSION" placeholder="" class="form-control" value="0000" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>COMPANY_ENTRANCE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="COMPANY_ENTRANCE" name="COMPANY_ENTRANCE" placeholder="" class="form-control" value="01/02/2002" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+                                                
+
+
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>SALARY</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="SALARY" name="SALARY" placeholder="" class="form-control" value="1200" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>ANOTHER_PROFIT</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="ANOTHER_PROFIT" name="ANOTHER_PROFIT" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>ANOTHER_PROFIT_VALUE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="ANOTHER_PROFIT_VALUE" name="ANOTHER_PROFIT_VALUE" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>ACCOUNT_TYPE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="ACCOUNT_TYPE" name="ACCOUNT_TYPE" placeholder="" class="form-control" value="E" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>ACCOUNT_CODE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="ACCOUNT_CODE" name="ACCOUNT_CODE" placeholder="" class="form-control" value="041" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>ACCOUNT_AGENCY</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="ACCOUNT_AGENCY" name="ACCOUNT_AGENCY" placeholder="" class="form-control" value="0165" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>CUSTOMER_SINCE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="CUSTOMER_SINCE" name="CUSTOMER_SINCE" placeholder="" class="form-control" value="01/02/2010" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>HAVE_CREDIT_CARD</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="HAVE_CREDIT_CARD" name="HAVE_CREDIT_CARD" placeholder="" class="form-control" value="S" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>REFERENCE_NAME</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="REFERENCE_NAME" name="REFERENCE_NAME" placeholder="" class="form-control" value="CARLA" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>REFERENCE_AFINITY</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="REFERENCE_AFINITY" name="REFERENCE_AFINITY" placeholder="" class="form-control" value="A" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>REFERENCE_DDD</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="REFERENCE_DDD" name="REFERENCE_DDD" placeholder="" class="form-control" value="51" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>REFERENCE_PHONE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="REFERENCE_PHONE" name="REFERENCE_PHONE" placeholder="" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>BLACKLIST_CPF</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="BLACKLIST_CPF" name="BLACKLIST_CPF" placeholder="" class="form-control" value="N" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>BLACKLIST_PHONE</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="BLACKLIST_PHONE" name="BLACKLIST_PHONE" placeholder="" class="form-control" value="N" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>BLACKLIST_ADDRESS</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="BLACKLIST_ADDRESS" name="BLACKLIST_ADDRESS" placeholder="" class="form-control" value="N" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+
+                                            <div class="row">
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                </div>
+                                                <!-- end col-4 -->
+                                                <!-- begin col-4 -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                    <label></label>
+                                                        <div class="controls">
+                                                            <button type="button" class="btn btn-primary m-r-5 m-b-5 enviar">SUBMIT</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end col-4 -->
+                                            </div>
+
+
+                                        </fieldset>
+									</div>
+									<!-- end wizard step-3 -->
+								
+								</div>
+					   <!-- </form> -->
+                        </div>
+                    </div>
+                    <!-- end panel -->
+                </div>
+                <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+			
+            <div class='row result'>
+			   
+            	<!-- col-12 -->
+				<div class="col-md-12">
+			        <div class="panel panel-inverse" data-sortable-id="ui-buttons-2">
+                        
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Result</h4>
+                        </div>
+                        <div class="panel-body">
+							
+	                        <table class='table table-valign-middle'>
+		                        <thead>
+		                        	<tr>
+		                        		<th>LEGAL ID</th>
+		                        		<th>NAME</th>
+		                        		<th>CITY</th>
+		                        		<th>SCORE</th>
+		                        		<th>PREDICTION</th>
+		                        	</tr>
+		                        </thead>
+		                        <tbody>
+		                        	<tr>
+		                        		<td>7072989903</td>
+		                        		<td>SHEILA DIAS</td>
+		                        		<td>CANOAS</td>
+		                        		<td>78.34</td>
+		                        		<td><span class="label label-success">LEGITIMATE</span></td>
+		                        	</tr>
+		                        </tbody>
+
+	                        </table>
+
+                        </div>
+                        
+                    </div>
+			    </div>
+			    <!-- end col-12 -->	
+
+			</div>
+			<!-- end wizard step-4 -->
+
+		
+		</div>
+		<!-- end #content -->
+		
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+	
+</body>
+</html>
