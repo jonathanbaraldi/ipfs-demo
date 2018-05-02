@@ -1,9 +1,0 @@
-﻿{ 
-	"velocidadeMedia" : {
-		"carro1" : 80,
-		"carro2" : 10,
-		"carro3" : 150,
-		"carro4" : null,
-		"carro5" : 50
-	}
-}
