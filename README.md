@@ -20,14 +20,14 @@ Demo de streaming de vídeo com IPFS
 		added QmYX1rTh41HCLCp8srWkPgobppjH4pRjZU4fyGd6o5udWa site/play
 		added QmSWoidZ63dj4abhr4PUV4PcXY4z9yaBW8a2DAa4kjGkhd site/lib/font
 		added Qmc8Dh8Mg6UwxKGyVEGob9MVCVSRueQmyF4sxdLBxrZ6eD site/lib
-		>>>> added QmYpVeRRpiHCCqQLw25fVAkk8hAQJy77Jw7g8BYu6Kuzkv site 
+		>>>>> added QmYpVeRRpiHCCqQLw25fVAkk8hAQJy77Jw7g8BYu6Kuzkv site
 
-		http://52.226.65.48:8080/ipfs/QmYX1rTh41HCLCp8srWkPgobppjH4pRjZU4fyGd6o5udWa
+		http://52.226.65.48:8080/ipfs/QmYpVeRRpiHCCqQLw25fVAkk8hAQJy77Jw7g8BYu6Kuzkv
 
 # ipfs add -r infinity-war/
 	
 		added QmVdxqcHVkDAejW9cS5C3HWLca8N3ZA5HQbiCJm7R4efKj infinity-war/video.mp4
-		>>>> added QmZ43LY6Gsu23G7khoJmXgYLjYgqa425JTUdNUfoDnVgzW infinity-war
+		>>>>> added QmZ43LY6Gsu23G7khoJmXgYLjYgqa425JTUdNUfoDnVgzW infinity-war
 
 
 Localmente
@@ -40,17 +40,25 @@ Gateway
 
 	
 
-# ipfs name publish <hash>
+# ipfs name publish QmYpVeRRpiHCCqQLw25fVAkk8hAQJy77Jw7g8BYu6Kuzkv
 	Published to <your peer ID>: <that hash>
+	Published to QmWv8BvVmndFdE7Mft2jTnrz3CfPBrCErqighLasYJ1b8r: /ipfs/QmYpVeRRpiHCCqQLw25fVAkk8hAQJy77Jw7g8BYu6Kuzkv
 
 # ipfs name resolve <your peer ID>
-<that hash>
+# ipfs name resolve QmWv8BvVmndFdE7Mft2jTnrz3CfPBrCErqighLasYJ1b8r
+					
+	<that hash>
+	/ipfs/QmYpVeRRpiHCCqQLw25fVAkk8hAQJy77Jw7g8BYu6Kuzkv
 
-	# https://ipfs.io/ipns/<your peer ID>
+# https://ipfs.io/ipns/<your peer ID>
+# https://ipfs.io/ipns/QmWv8BvVmndFdE7Mft2jTnrz3CfPBrCErqighLasYJ1b8r/
+
+# https://ipfs.io/ipns/QmWv8BvVmndFdE7Mft2jTnrz3CfPBrCErqighLasYJ1b8r/play#/ipfs/QmZ43LY6Gsu23G7khoJmXgYLjYgqa425JTUdNUfoDnVgzW
 
 # Colocar no DNS
 
-	https://ipfs.io/ipns/QmaJLU8Jb2NmpHsgCGu3EqawjqFB23FfXHvt3kWted1PdQ/en/
+	https://ipfs.io/ipns/QmWv8BvVmndFdE7Mft2jTnrz3CfPBrCErqighLasYJ1b8r
+	/play
 
 
 
